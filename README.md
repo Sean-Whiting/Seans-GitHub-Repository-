@@ -80,7 +80,9 @@ This ELK server is configured to monitor the following machines:
 - _Web 1: 10.0.0.8_
 - _Web 2: 10.0.0.9_
 - _Web 3: 10.0.0.10_
-We have installed the following Beats on these machines:
+
+#We have installed the following Beats on these machines:
+
 - _Web 1: Filebeat, Metricbeat_
 - _Web 2: Filebeat, Metricbeat_
 - _Web 3: Filebeat, Metricbeat_
