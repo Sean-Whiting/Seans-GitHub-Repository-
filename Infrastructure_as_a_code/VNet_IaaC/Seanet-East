@@ -1,0 +1,37 @@
+{
+    "name": "Seanet-East",
+    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/virtualNetworks/Seanet-East",
+    "etag": "W/\"4e124563-9f0b-4cbc-b2f5-90c92cf12541\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "9458bc39-f7df-4f6d-9d87-941aa9522fbc",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.1.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/virtualNetworks/Seanet-East/subnets/default",
+                "etag": "W/\"4e124563-9f0b-4cbc-b2f5-90c92cf12541\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.1.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/seanet-elk-gateway173/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/seanet-gateway-elk782/ipConfigurations/ipconfig1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}

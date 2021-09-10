@@ -1,0 +1,59 @@
+{
+    "name": "Jump-Box-Provisioner",
+    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Compute/virtualMachines/Jump-Box-Provisioner",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "westus",
+    "properties": {
+        "vmId": "4d6eabee-a7c3-4a3d-9bc7-2ffda039f588",
+        "hardwareProfile": {
+            "vmSize": "Standard_B1s"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "Canonical",
+                "offer": "UbuntuServer",
+                "sku": "18.04-LTS",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "Jump-Box-Provisioner_disk1_14b361f141004938a170ea65c68bbace",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/SEAN/providers/Microsoft.Compute/disks/Jump-Box-Provisioner_disk1_14b361f141004938a170ea65c68bbace"
+                }
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "Jump-Box-Provisioner",
+            "adminUsername": "azadmin",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": true,
+                "ssh": {
+                    "publicKeys": [
+                        {
+                            "path": "/home/azadmin/.ssh/authorized_keys",
+                            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8r359YpSzKaNUeUO516zkenLuddiDHHKhVwwgCSWZrqIXGrNpaCSpfAO0T++pQ+dL9c08QLfLjYpHgapDNGLq7IUjaBllwpwlCpkpc4F6CqHj/j8lRd7/fVjwNy1VRn4ytKr9KU9S7jPYenG3qs+BN8sbL2LfUCiMRNJmtwFgpQPrx3n28597VDd/GIlX1aejRq9/TRYwu44IZNqj9jHzFFTG8Sua3TDglXzi/34VT9LN25YUmQW0dGUw5tT7hHNriv5Hs4f3BOUiDDwTldgzkCG3BfKXrqNFEQVXan5DjS6vH+2Kf+H01jIMGaVb0xgzClLE+HZteZV6uqHPrg//4mqCjM343KN7jrcjrjBlt5Pk/U7QIDf+RNbOQQyatbkPkc+XvdvuEPabJV5PdGLXEx4R99yOSSVkm83Avkg0m3cOhtsaKUBJ4g15w6XeZ+x3RWaZAu+lndpRbOK6dmym2nuZ6O1c5W3sYvaGhRUGGZe87aYWPDgQfchCKqSn140= seana@DESKTOP-LGOPGP5"
+                        }
+                    ]
+                }
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/jump-box-provisioner481"
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "provisioningState": "Succeeded"
+    }
+}

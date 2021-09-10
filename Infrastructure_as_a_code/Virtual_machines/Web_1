@@ -1,0 +1,78 @@
+{
+    "name": "Web-1",
+    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/SEAN/providers/Microsoft.Compute/virtualMachines/Web-1",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "westus",
+    "properties": {
+        "vmId": "781c406f-1402-4fc4-b65b-984721bfcd56",
+        "availabilitySet": {
+            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/SEAN/providers/Microsoft.Compute/availabilitySets/REDTEAMAS"
+        },
+        "hardwareProfile": {
+            "vmSize": "Standard_B1ms"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "Canonical",
+                "offer": "UbuntuServer",
+                "sku": "18.04-LTS",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "Web-1_OsDisk_1_682f1c9039634342ae556021acaac387",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/SEAN/providers/Microsoft.Compute/disks/Web-1_OsDisk_1_682f1c9039634342ae556021acaac387"
+                }
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "Web-1",
+            "adminUsername": "azadmin",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": true,
+                "ssh": {
+                    "publicKeys": [
+                        {
+                            "path": "/home/azadmin/.ssh/authorized_keys",
+                            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8r359YpSzKaNUeUO516zkenLuddiDHHKhVwwgCSWZrqIXGrNpaCSpfAO0T++pQ+dL9c08QLfLjYpHgapDNGLq7IUjaBllwpwlCpkpc4F6CqHj/j8lRd7/fVjwNy1VRn4ytKr9KU9S7jPYenG3qs+BN8sbL2LfUCiMRNJmtwFgpQPrx3n28597VDd/GIlX1aejRq9/TRYwu44IZNqj9jHzFFTG8Sua3TDglXzi/34VT9LN25YUmQW0dGUw5tT7hHNriv5Hs4f3BOUiDDwTldgzkCG3BfKXrqNFEQVXan5DjS6vH+2Kf+H01jIMGaVb0xgzClLE+HZteZV6uqHPrg//4mqCjM343KN7jrcjrjBlt5Pk/U7QIDf+RNbOQQyatbkPkc+XvdvuEPabJV5PdGLXEx4R99yOSSVkm83Avkg0m3cOhtsaKUBJ4g15w6XeZ+x3RWaZAu+lndpRbOK6dmym2nuZ6O1c5W3sYvaGhRUGGZe87aYWPDgQfchCKqSn140= seana@DESKTOP-LGOPGP5"
+                        }
+                    ]
+                }
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/web-1387"
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "provisioningState": "Succeeded"
+    },
+    "resources": [
+        {
+            "name": "enablevmaccess",
+            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/SEAN/providers/Microsoft.Compute/virtualMachines/Web-1/extensions/enablevmaccess",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.OSTCExtensions",
+                "type": "VMAccessForLinux",
+                "typeHandlerVersion": "1.4",
+                "settings": {}
+            }
+        }
+    ]
+}

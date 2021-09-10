@@ -1,0 +1,52 @@
+{
+    "name": "seanet",
+    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/virtualNetworks/seanet",
+    "etag": "W/\"2a0b4c24-3759-4c7a-a7f4-5f386978b719\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "westus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "0cd76980-11ba-42ac-8e23-466dbcf6e63f",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/virtualNetworks/seanet/subnets/default",
+                "etag": "W/\"2a0b4c24-3759-4c7a-a7f4-5f386978b719\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/jump-box-provisioner883/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/jump-box-provisioner481/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/web-1410/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/web-2283/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/web-1387/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/web-2312/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/web-3378/ipConfigurations/ipconfig1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}

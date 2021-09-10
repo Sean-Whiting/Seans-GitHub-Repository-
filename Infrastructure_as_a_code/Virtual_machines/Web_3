@@ -1,0 +1,62 @@
+{
+    "name": "web-3",
+    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/SEAN/providers/Microsoft.Compute/virtualMachines/web-3",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "westus",
+    "properties": {
+        "vmId": "9e1e837d-6071-4f07-8fab-8d9cdff33842",
+        "availabilitySet": {
+            "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/SEAN/providers/Microsoft.Compute/availabilitySets/REDTEAMAS"
+        },
+        "hardwareProfile": {
+            "vmSize": "Standard_B1ms"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "Canonical",
+                "offer": "UbuntuServer",
+                "sku": "18.04-LTS",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "web-3_OsDisk_1_5934d06112e2472ba90e68d4ca7fbf76",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/SEAN/providers/Microsoft.Compute/disks/web-3_OsDisk_1_5934d06112e2472ba90e68d4ca7fbf76"
+                }
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "web-3",
+            "adminUsername": "azadmin",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": true,
+                "ssh": {
+                    "publicKeys": [
+                        {
+                            "path": "/home/azadmin/.ssh/authorized_keys",
+                            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDOIZB/Bi/e9RFqMIXxCV+M5Zfqe0zFL1DBWFIuRDqNjQJHr4s6skvn8Tr0a++JYzfJYT0ehYxLe1GMsIoa25Z00d7gEsIOfXeu8m3Y0ewH+o2qo7IBD5K8IgE2dxFxxAmW7jrBqtNCffX7HKCLBFSiTlfwk7cPPBwtAExbLgs8mDG7W2nDAZBit9WZM4E+I85mjK5XNZskJSLpOzVv0hixzkHGSUuWvyN/tROqXvojPMjGsAgfG/Rwrg1heC3zAAkyLcx3gq5sENpgPwMkaMUtYZjm9zgeXgRoEuyE8EsrKUqZ6uZYsirpTIi6//+r7oFUWlTicoaApMv7ZpvnhH5gVXI/mkF/SU1gVEJEpyer1iAqX1KxiKjjyyqjZlhDQh590niT2pygKYSCTYghcxQgew4S3GNOknaDv0OwSMj9cVP4Ti7lOAYOI6lIKtGtXkvkM6uy697jgN0RIG0mbIxRZn7YIHc5K72FaGKr4XALCnEhXDBWEnBpFMzJX8209Fk= root@6b9b7fc36b50"
+                        }
+                    ]
+                }
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/ec696360-492b-461c-873e-6ab717474f9b/resourceGroups/Sean/providers/Microsoft.Network/networkInterfaces/web-3378"
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "provisioningState": "Succeeded"
+    }
+}
