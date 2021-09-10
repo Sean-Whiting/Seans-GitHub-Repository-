@@ -1,0 +1,37 @@
+---
+- name: My first playbook
+  hosts: webservers
+  become: true
+  tasks:
+
+  - name: uninstall apache2
+    apt:
+      name: apache2
+      state: absent
+
+  - name: install docker.io (state=present is optional)
+    apt:
+      update_cache: yes
+      name: docker.io
+      state: present
+
+  - name: install python3-pip (state=present is optional)
+    apt:
+      name: python3-pip
+      state: present
+  - name: install docker (state=present is optional)
+    pip:
+      name: docker
+      state: present
+
+  - name: Docker web container
+    docker_container:
+      name: dvwa
+      image: cyberxsecurity/dvwa
+      state: started
+      restart_policy: always
+      published_ports: 80:80
+#Docker is an important tool, installing docker on my servers is allowing me to be able to distribute software.
+#pip3 installs and manages software packages.
+#dvwa stands for damn vulnerable web server, this is the website that my servers are running.
+#Uninstalling apache3 was important because it will interfere with how docker works.
